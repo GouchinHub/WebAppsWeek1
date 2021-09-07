@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body>
+    <h1>Hello World!</h1>
+    <h2>todays menu!</h2>
+    <div id="menu"></div>
+    <script src="src/menu.js"></script>
+    <h3>Feedback</h3>
+    <div>
+      <ul id="list" />
+    </div>
+    <div>
+      <textarea id="comment"></textarea>
+      <div>
+        <button id="remove-comments" onclick="src/add.js">
+          Clear comments
+        </button>
+        <button id="add-comment" onclick="src/add.js">Comment</button>
+      </div>
+    </div>
+    <script src="src/handleComments.js"></script>
+  </body>
 </html>
