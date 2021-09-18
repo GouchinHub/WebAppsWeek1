@@ -1,7 +1,7 @@
 import "./menu-styles.css";
 
 document.getElementById("menu").innerHTML = `
-<table class="menu-table" id="menu-table">
+<table id="menu-table">
       <tr>
         <th>
           Name
