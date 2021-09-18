@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
   </head>
 
   <body>
-    <h1>Hello World!</h1>
-    <h2>todays menu!</h2>
-    <div id="menu"></div>
-    <script src="src/menu.js"></script>
-    <h3>Feedback</h3>
-    <div>
-      <ul id="list" />
-    </div>
-    <div>
-      <textarea id="comment"></textarea>
-      <div>
-        <button id="remove-comments" onclick="src/add.js">
-          Clear comments
-        </button>
-        <button id="add-comment" onclick="src/add.js">Comment</button>
+    <div class="menu-layout">
+      <h2>todays menu!</h2>
+      <div class="header" id="menu"></div>
+      <script src="src/menu.js"></script>
+      <div class="area-divider" <div id="feedback-area">
+        <h3>Leave feedback</h3>
+        <div class="header">
+          <ul id="list" />
+        </div>
+        <div>
+          <textarea id="commentArea" class="commentArea"></textarea>
+          <div class="rating-divider">
+            <select id="rating" class="rating-select">
+              <option value="5 Stars">5 Stars</option>
+              <option value="4 Stars">4 Stars</option>
+              <option value="3 Stars">3 Stars</option>
+              <option value="2 Stars">2 Stars</option>
+              <option value="1 Star">1 Star</option>
+            </select>
+          </div>
+          <div>
+            <button id="remove-comments">
+              Edit comments
+            </button>
+            <button id="add-comment">
+              Comment
+            </button>
+          </div>
+        </div>
+        <script src="src/handleComments.js"></script>
       </div>
     </div>
-    <script src="src/handleComments.js"></script>
   </body>
 </html>

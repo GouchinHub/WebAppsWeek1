@@ -1,7 +1,7 @@
-import "./styles.css";
+import "./menu-styles.css";
 
 document.getElementById("menu").innerHTML = `
-<table>
+<table class="table" id="menu-table">
       <tr>
         <th>
           Name
@@ -52,3 +52,6 @@ document.getElementById("menu").innerHTML = `
       </tr>
     </table>
 `;
+
+document.getElementById("menu-table").style.textAlign = "left";
+document.getElementById("menu-table").style.backgroundColor = "#f2f2f2";
