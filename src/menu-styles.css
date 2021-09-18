@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: Garamond;
 }
 table {
   border: 3px solid black;
@@ -19,6 +19,8 @@ th {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.table {
+#menu-table {
   width: 100%;
+  text-align: left;
+  background-color: #f2f2f2;
 }
