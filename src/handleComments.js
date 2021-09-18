@@ -10,10 +10,10 @@ addButton.onclick = function () {
   commentDiv.className = "comment";
   commentDiv.innerHTML =
     `
-  <div id="comment-rating" class="comment-rating">Rating: ` +
+  <div id="comment-rating" class="comment-rating">` +
     rating.value +
-    `</div>
-  <div id="comment-text" class="comment-text"/>Comment: ` +
+    ` Stars</div>
+  <div id="comment-text" class="comment-text"/>` +
     commentArea.value +
     `</div>
   <button id="remove" class="remove-comment" onclick="return this.parentNode.remove();">X</button

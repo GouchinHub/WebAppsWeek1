@@ -43,3 +43,8 @@ button {
 .remove-comment {
   display: none;
 }
+
+#menu-table {
+  text-align: left;
+  background-color: #f2f2f2;
+}
